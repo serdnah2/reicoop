@@ -1,0 +1,171 @@
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --bgColor: rgba(245, 245, 245);
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f7;
+}
+
+/* principal image wrapper */
+
+.principal-image-wrapper {
+  position: relative;
+}
+
+.principal-image-wrapper .main-image {
+  background-image: url("../img/banner.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.principal-image-wrapper .overlap-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+}
+
+/* end principal image wrapper */
+
+/* list items wrapper */
+
+.list-items-wrapper {
+  margin: 100px 0;
+}
+
+.list-items-wrapper ul {
+  width: min(60rem, 90%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.list-items-wrapper ul li {
+  max-width: 12rem;
+  justify-self: center;
+  display: grid;
+  grid-template:
+    "icon"
+    "line"
+    "dot"
+    "title"
+    "descr" 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.list-items-wrapper ul li .icon {
+  grid-area: icon;
+  width: 6rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 2.5rem;
+  border: 0.4rem solid var(--bgColor);
+  border-radius: 50%;
+  background: var(--accent-color);
+  box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
+    inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+}
+
+.list-items-wrapper ul li::before {
+  content: "";
+  grid-area: line;
+  height: 2rem;
+  border-right: 2px dotted currentColor;
+}
+
+.list-items-wrapper ul li::after {
+  content: "";
+  grid-area: dot;
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--accent-color);
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+
+.list-items-wrapper ul li .title {
+  grid-area: title;
+  margin-block: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* end list items wrapper */
+
+
+
+/* Bullet lists */
+
+.bullet-text-p {
+  color: #676767;
+}
+
+.card {
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 650px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+
+.bullet-point-container {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.bullet-point {
+  background-color: #8cc63f;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bullet-text {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* end bullet list */
+
+@media (max-width: 768px) {
+    .main-image {
+      height: 300px;
+    }
+}
