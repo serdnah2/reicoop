@@ -33,7 +33,7 @@ header {
 }
 
 .nav-links a.selected {
-  color: #8cc63f;
+  color: #902d12ff;
 }
 
 .hamburger-menu {
@@ -53,7 +53,7 @@ header {
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background-color: #333;
+  background-color: #f4f2edff;
   position: fixed;
   top: 0;
   left: -250px;
@@ -65,7 +65,7 @@ header {
 }
 
 .mobile-menu a {
-  color: white;
+  color: #c7360fff;
   text-decoration: none;
   margin: 10px 0;
   transition: color 0.3s;
