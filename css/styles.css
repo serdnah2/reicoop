@@ -67,6 +67,10 @@ body {
   margin: 100px 0;
 }
 
+.list-items-wrapper-innovation {
+  margin: 0 0 0 40px;
+}
+
 .list-items-wrapper ul {
   width: min(60rem, 90%);
   margin-inline: auto;
@@ -197,6 +201,14 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+ol {
+  margin-left: 40px;
+}
+
 /* end bullet list */
 
 @media (max-width: 768px) {
@@ -206,6 +218,10 @@ body {
 
     .list-items-wrapper {
       margin: 0;
+    }
+
+    .list-items-wrapper-innovation {
+      margin: 0 0 0 25px;
     }
 
     body {
@@ -230,5 +246,9 @@ body {
     .principal-image-wrapper .main-image.home {
       background-image: url("../img/banners/a-woman-with-a-backpack-standing-against-the-backg-2022-01-21-20-44-13-utc.jpg");
       background-position: center;
+    }
+
+    ol {
+      margin-left: 25px;
     }
 }
