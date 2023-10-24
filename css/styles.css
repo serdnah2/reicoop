@@ -28,6 +28,29 @@ body {
   background-position: center;
 }
 
+.principal-image-wrapper .main-image.diversity-inclusion {
+  background-image: url("../img/banners/asian-hiker-couple-trekking-in-forest-2021-09-04-11-58-48-utc.jpg");
+  background-position: 0 -140px;
+}
+
+.principal-image-wrapper .main-image.sustainability {
+  background-image: url("../img/banners/hiking-friends-travel-outdoor-group-sport-lifestyl-2022-03-26-07-10-31-utc.jpg");
+  background-position: 0 -250px;
+}
+
+.principal-image-wrapper .main-image.innovation {
+  background-image: url("../img/banners/hikers-with-backpacks-outdoors-2022-04-13-17-48-16-utc.jpg");
+}
+
+.principal-image-wrapper .main-image.operation {
+  background-image: url("../img/banners/sport-and-outdoor-activity-2022-11-28-23-58-23-utc.jpg");
+}
+
+.principal-image-wrapper .main-image.home {
+  background-image: url("../img/banners/a-woman-with-a-backpack-standing-against-the-backg-2022-01-21-20-44-13-utc.jpg");
+  background-position: 0 -300px;
+}
+
 .principal-image-wrapper .overlap-image {
   position: absolute;
   width: 100%;
@@ -162,6 +185,18 @@ body {
   width: 100%;
 }
 
+.fixed-image-100 {
+  width: 100%;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bottom-margin {
+  margin-bottom: 1.25rem;
+}
+
 /* end bullet list */
 
 @media (max-width: 768px) {
@@ -180,5 +215,20 @@ body {
     .card {
       border: 0;
       border-radius: none;
+    }
+
+    .principal-image-wrapper .main-image.diversity-inclusion {
+      background-image: url("../img/banners/asian-hiker-couple-trekking-in-forest-2021-09-04-11-58-48-utc.jpg");
+      background-position: center;
+    }
+
+    .principal-image-wrapper .main-image.sustainability {
+      background-image: url("../img/banners/hiking-friends-travel-outdoor-group-sport-lifestyl-2022-03-26-07-10-31-utc.jpg");
+      background-position: center;
+    }
+
+    .principal-image-wrapper .main-image.home {
+      background-image: url("../img/banners/a-woman-with-a-backpack-standing-against-the-backg-2022-01-21-20-44-13-utc.jpg");
+      background-position: center;
     }
 }
